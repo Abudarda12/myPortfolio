@@ -28,9 +28,11 @@
     padding: 0.5em 1em;
     border-radius: 5px;
     cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .nav-links button:hover{
     background-color: #599999;
+    transform: translateY(-5px);
 }
 .nav__toggle{
     display: none;
@@ -68,5 +70,8 @@
   .nav-links a:hover{
     color: white;
 }
+.nav-links.active button{
+    background-color: #599999;
     
+}
 }

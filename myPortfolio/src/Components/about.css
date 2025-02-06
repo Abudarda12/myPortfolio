@@ -19,17 +19,32 @@
         animation-timeline: view();
         animation-range: entry 0 cover 50%;
 }
-.a-right{
-    display: flex;
-   justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    margin-left: 2em;
-   padding: 1em 1em 1em 1em;
-   animation: appear 2s linear ;
-        animation-timeline: view();
-        animation-range: entry 0 cover 50%;
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(128, 62, 62, 0.1);
+    text-align: center;
+    animation: appear 2s linear ;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card:hover{
+    box-shadow: 0 8px 16px rgba(7, 5, 5, 0.2);
+    transform: translateY(-5px); 
+    
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
 }
 .a-left h1{
     font-size: 3em;
@@ -47,9 +62,11 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.5em;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .a-left button:hover{
     background-color: #6d4d85;
+    transform: translateY(-5px);
 }
 @keyframes appear{
     from{
@@ -64,7 +81,7 @@
 @media(max-width: 600px){
     .container{
         flex-direction: column;
-        margin-top: 800px;
+        margin-top: 700px;
        
     }
     .a-left{
@@ -75,27 +92,29 @@
         animation-timeline: view();
         animation-range: entry 0 cover 50%;
     }
-    .a-right{
-        width: 90%;
-        animation: appear 2s linear ;
-        animation-timeline: view();
-        animation-range: entry 0 cover 50%;
-  
+    
+    .a-right {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
-    .right .front-end{
-        height: 10vh;
-        width: 90%;
-        padding: 3em;
+    
+    .card {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 10px;
+        width: 30%;
+        box-shadow: 0 4px 8px rgba(128, 62, 62, 0.1);
+        text-align: center;
     }
-    .back-end{
-        height: 10vh;
-        width: 90%;
-        padding: 3em;
-        margin: 1em;
+    
+    .card h3 {
+        margin-bottom: 10px;
     }
-    .database{
-        height: 10vh;
-        width: 90%;
-        padding: 3em;
+    
+    .card p {
+        color: #666;
     }
 }

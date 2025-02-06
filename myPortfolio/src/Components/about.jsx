@@ -1,5 +1,9 @@
 import './about.css';
+import React, { useEffect } from 'react';
 export default function About(){
+   
+
+
     return(
         <>
         
@@ -17,20 +21,23 @@ export default function About(){
             </a>
         </section>
         <section className="a-right">
-            <div className="front-end">
+            <div className="card">
                 <h3>Front-end</h3>
                 lorem ipsum dolor sit amet,  consectetur adipiscing elit.
             </div>
-            <div className="back-end">
+            <div className="card">
                 <h3>Back-end</h3>
                 lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
-            <div className="database">
+            <div className="card">
                 <h3>Database</h3>
                 lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
+            {/* <div className="number-container">
+                        <span id="number">0</span>
+                    </div> */}
         </section>
-
+       
         </div>
        
         </>

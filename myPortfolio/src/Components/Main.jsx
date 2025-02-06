@@ -1,5 +1,7 @@
 import './main.css';
+import React, { useEffect } from 'react';
 export default function Main() {
+   
     return (<>
       <main className='main'>
         <section className='left'>
