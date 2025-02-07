@@ -1,4 +1,6 @@
-body{
-    background: linear-gradient(to right, #6d4d85 , #599999 );
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body{ background: white; 
+    color: black; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  /* Path: src/index.css */
+   
+   
 }

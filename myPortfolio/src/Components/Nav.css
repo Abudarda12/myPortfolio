@@ -7,6 +7,7 @@
     top: 0;
     margin-bottom: 1em;
     z-index: 100;
+    
 }
 .nav-links{
     display: flex;
@@ -19,10 +20,10 @@
     margin: 0 1em;
 }
 .nav-links a:hover{
-    color: #6d4d85
+    color:rgb(109, 110, 9);
 }
 .nav-links button{
-    background-color: #6d4d85;
+    background-color: #599999;
     color: white;
     border: none;
     padding: 0.5em 1em;
@@ -31,7 +32,8 @@
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .nav-links button:hover{
-    background-color: #599999;
+    background-color: black;
+    color: #fff;;
     transform: translateY(-5px);
 }
 .nav__toggle{
@@ -50,9 +52,9 @@
       display: block;
       cursor: pointer;
       font-size: 1.7em;
-      background-color:#6d4d85;
-      color: white;
-      border-radius: 5px;
+     
+      color: black;
+   
       padding: 0.2em 0.5em;
   }
   .nav-links.active{
@@ -60,15 +62,15 @@
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
-    background-color: #6d4d85;
+    background-color: floralwhite;
     width: 90vw;
-    height: 70vh;
+    height: 90vh;
     top: 5em;
     left: 5vw;
     color: #000;
   }
   .nav-links a:hover{
-    color: white;
+    color: #599999;
 }
 .nav-links.active button{
     background-color: #599999;

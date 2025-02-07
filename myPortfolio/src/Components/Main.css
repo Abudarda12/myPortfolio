@@ -15,7 +15,7 @@
    padding: 1em 1em 1em 1em;
    animation: appear 2s linear ;
         animation-timeline: view();
-        animation-range: entry 0 cover 40%;
+        animation-range: entry 0 cover 20%;
     
 }
 .right{
@@ -43,7 +43,7 @@
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .left button:hover{
-    background-color: #6d4d85;
+    background-color: black;
     transform: translateY(-5px);
 }
 .social-icons a{
@@ -59,6 +59,7 @@
 .right{
     display: flex;
     justify-content: center;
+    box-shadow: black;
     animation: appear 2s linear ;
         animation-timeline: view();
         animation-range: entry 0 cover 50%;
@@ -75,27 +76,32 @@
     display: flex;
     justify-content: center;
     align-items: last baseline;
-    height: 90vh;
+    height: 50vh;
     width: 90%;
-    border-radius: 10% 0 10% 0;
+    border-radius: 50% 50% 0% 0;
     z-index: -1;
     position: relative;
-    background-color: #599999;
+    background-color: #999595;
     
 }
 .right img{
-    bottom: 0%;
+    
+    height: 100vh;
+    filter: drop-shadow(10px 10px 0.75rem black);
+    transition: .5s;
+    /* bottom: 0%;
     height: 80vh;
     width: 80%;
     border-radius: 10% 0 10% 0;
+    
     z-index: 1;
     display: inline-block;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; */
     
 }
-.right img:hover{
-    box-shadow: 0 0 10px 5px #254444;
-    transform: translateX(-10px);
+.right img:hover {
+   
+    transform:  rotate(2deg);
 }
 @keyframes appear{
     from{
@@ -109,6 +115,9 @@
 @media (max-width: 600px){
     .main{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
     }
     .left{
         width: 90%;
@@ -119,7 +128,7 @@
     }
     .right{
         width: 100%;
-        margin: 0;
+        margin: 10vh;
         height: 40vh;
         animation: appear 2s linear ;
         animation-timeline: view();

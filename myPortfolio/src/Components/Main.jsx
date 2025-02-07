@@ -5,13 +5,15 @@ export default function Main() {
     return (<>
       <main className='main'>
         <section className='left'>
+            <div className="content">
             <h3>Hi! I'm</h3>
             <h1 >Abudarda Ansari</h1>
             <h3>Full Stack Developer</h3>
+            
             <p>
-            I am a Full Stack Developer with a passion for creating user-friendly web applications.
-              I am proficient in both front-end and back-end technologies, <br /> 
-             and I am always looking to learn new things.
+            I am a Full Stack Developer with a passion for <br /> creating user-friendly web applications.
+              I am proficient in both front-end and back-end technologies, 
+             and I am always looking to learn <br />new things.
             </p>
             <a href="#form">
                 <button>Hire Me!</button>
@@ -30,10 +32,14 @@ export default function Main() {
                     </a>
                     {/* Add more social icons as needed */}
                 </div>
+            </div>
+            
+           
+            
        </section>
        <section className='right'>
         <div className='image-front'>
-               <img src='src\Components\abudarda.jpeg' alt='Abudarda Ansari' />
+               <img src='src\Components\WhatsApp Image 2025-02-07 at 11.19.17 PM.png' alt='Abudarda Ansari' />
         </div>
         
        </section>

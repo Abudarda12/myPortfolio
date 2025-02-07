@@ -2,6 +2,7 @@ import Nav from "./Components/nav"
 import Main from "./Components/Main"
 import About from "./Components/about"
 import Skill from "./Components/Skill"
+import Project from "./Components/project"
 import './App.css';
 function App() {
  
@@ -10,10 +11,13 @@ function App() {
     <>
     <div className="page">
     <Nav />
+   
       <Main />
       <About />
       
+      <Project />
       <Skill />
+
     </div>
     
     </>

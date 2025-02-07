@@ -23,7 +23,7 @@ export default function Skill() {
                 </p>
             </div>
         </section>
-        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br />
         <footer className="footer">
                 <div className="footer-content">
                     <p>&copy; 2025 My Portfolio. All rights reserved.</p>

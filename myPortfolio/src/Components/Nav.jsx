@@ -8,13 +8,13 @@ export default function Nav(){
 
     return (
         <nav className="nav">
-            <h1>My Portfolio</h1>
+            <h1 style={{fontFamily:"cursive"}}>Abudarda Ansari</h1>
             <div className={"nav-links" + (active ? " active" : "")}>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
                 <div className="resume">
-                     <a href="/abudarda.pdf" download>
+                     <a href="src\Components\abudarda.pdf" download>
                      <button>Download CV</button>
                      </a>
                 </div>
